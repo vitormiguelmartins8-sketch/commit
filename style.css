@@ -36,7 +36,7 @@ h1 {
     padding: 20px;
     margin: 0 auto;
     gap: 10px;
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 
     display: block;
     align-items: center;
@@ -58,12 +58,42 @@ h1 {
     padding: 20px;
     margin: 0 auto;
     gap: 10px;
+    margin-bottom: 200px;
 
     display: block;
     align-items: center;
     flex-direction: column;
-    image-rendering: pixelated;
-    z-index: 2;
+   
+    z-index: 1;
+
+        transform: scale(0.95);
+    transition: all 1.2s ease;
+}
+
+
+
+#container3{
+
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    width: 900px;
+    height: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    gap: 10px;
+
+    display: block;
+    align-items: center;
+    flex-direction: column;
+   
+    z-index: 1;
+
+        transform: scale(0.9);
+    transition: all 1.2s ease;
 }
 
 #botao1 {
@@ -79,9 +109,26 @@ h1 {
 img {
     background-image: url('imagem1.png');
     background-size: cover;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     border-radius: 10px;
     margin: 0 auto;
 }
 
+#rodape{
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px;
+    font-family: monospace; 
+    font-size: 14px;
+    
+
+    border-top: 2px solid #088c93; 
+    box-shadow: 0 -5px 15px rgba(8, 140, 147, 0.3); 
+    
+
+    position: relative;
+    margin-top: 50px; 
+    width: 100%;
+}
