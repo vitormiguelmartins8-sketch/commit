@@ -1,0 +1,126 @@
+/* Estilo Base Kali Linux / Mr. Robot */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #050505;
+    color: #00ff00;
+    overflow: hidden;
+}
+
+#main-content {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-header {
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    color: #888;
+    font-size: 1rem;
+}
+
+#terminal-body {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 25px;
+    padding-right: 15px;
+    font-size: 1.05rem;
+}
+
+.console-line {
+    margin-bottom: 14px;
+    line-height: 1.5;
+}
+
+.user-line { color: #ffffff; }
+.ai-line { color: #00ff00; }
+.system-line { color: #888; }
+
+/* Estilo da Máscara ASCII Grande e Centralizada */
+.logo-line { 
+    color: #ff0033; 
+    font-weight: bold; 
+    white-space: pre; 
+    line-height: 1.1; 
+    font-size: 1.05rem; /* Tamanho ajustado para não quebrar as linhas */
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.prompt-prefix {
+    color: #ff0033;
+    margin-right: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 1.1rem;
+}
+
+#user-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.send-btn {
+    background: transparent;
+    color: #ff0033;
+    border: 1px solid #ff0033;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.send-btn:hover {
+    background: #ff0033;
+    color: #000;
+    box-shadow: 0 0 15px #ff0033;
+}
+
+#binary-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(5, 5, 5, 0.98);
+    z-index: 8888;
+    padding: 25px;
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 1.2;
+    word-break: break-all;
+    color: rgba(0, 255, 0, 0.35);
+}
+
+body::before {
+    content: " "; display: block; position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 9999; background-size: 100% 3px, 4px 100%; pointer-events: none;
+}

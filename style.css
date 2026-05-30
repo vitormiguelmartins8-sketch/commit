@@ -150,3 +150,24 @@ img {
     margin-top: 50px; 
     width: 100%;
 }
+
+.destaque {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: #088c93;
+    text-align: center;
+}
+
+.glitch-btn {
+    background-color: #088c93;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
